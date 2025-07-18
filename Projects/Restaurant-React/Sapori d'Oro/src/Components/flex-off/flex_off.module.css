@@ -1,0 +1,40 @@
+.flex_off {
+    display: flex;
+    padding: 20px 10px;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #ff7b1d ;
+    color: aliceblue;
+    font-family: "Playfair Display";
+    margin: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.flex_off > img {
+    width: 30%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 750px) {
+    .flex_off {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .flex_off > img {
+        width: 50%;
+    }
+}
+
+/* Responsivness for Phones */
+
+@media screen and (max-width: 650px) {
+
+     .flex_off > img {
+        width: 70%; 
+    }
+}

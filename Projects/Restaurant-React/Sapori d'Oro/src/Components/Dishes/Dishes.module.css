@@ -1,0 +1,70 @@
+.main_one {
+    padding: 20px;
+    background-color: #cdccd1;
+    margin: 20px;
+    border-radius: 10px;
+    user-select: none;
+    position: relative;
+}
+
+.main_one > h2 {
+    margin-bottom: 20px;
+    margin-left: 20px;
+    font-family: "Cinzel";
+}
+
+.dish_container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.arrow {
+    display: none;
+    position: absolute;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    bottom: 35%;
+    background-color: #ff7b1d;
+    transition: all .2s linear;
+}
+
+.arrow img {
+    width: 25px;
+}
+
+.left_arrow {
+    transform: scaleX(-1);
+    display: none;
+}
+
+.right_arrow {
+    right: 2%;
+    display: none;
+}
+
+.dish {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding: 20px;
+    cursor: pointer;
+    font-family: "Cinzel";
+    gap: 10px;
+    font-size: 14px;
+}
+
+.dish img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+}
